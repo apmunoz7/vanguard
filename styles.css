@@ -1,8 +1,8 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Arisztid Munoz */
 
 /* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
-
+/* IMPORT "INTER" FROM GOOGLE FONTS" */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -113,7 +113,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 0.5s ease;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
