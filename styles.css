@@ -65,6 +65,10 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+body {
+    min-width: 400px;
+    font-family: var(--font);
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -82,6 +86,12 @@ table {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    color: var(--white);
+}
+
+h1 {
+    padding-left: 4.5rem;
+    position: relative;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
@@ -93,7 +103,6 @@ table {
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     animation: float 3s ease-in-out infinite;
-    transform: translateY(-50%);
 }
 
 @keyframes float {
@@ -150,7 +159,8 @@ table {
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
-
+@media (min-width: 800px) {
+  
     #results {
         grid-template-columns: 1fr 1fr;
     }
@@ -164,6 +174,12 @@ table {
     .bar-chart {
         width: 50%;
     }
-
+    
+}
 
 /* MEDIA QUERIES (LARGE) */
+@media (min-width: 1024px) {
+  
+
+    
+}
