@@ -72,15 +72,47 @@ header {
     padding: 1rem;
 }
 
-.results{
+.about {
+    padding: 1rem 0;
+}
+
+h2 {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.services {
+    padding: 1rem 0;
+    color: var(--white);
+}
+
+.services h2 {
+    color: var(--black);
+}
+
+.service-card {
     background: var(--blue);
     padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    font-size: small;
+}
+
+.service-card > h3 {
+    background: var(--blue);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.results{
+    background: var(--blue);
+    padding: 1rem 0;
     color: var(--white);
 }
 
 .contact {
     background: var(--black);
-    padding: 1rem;
+    padding: 1rem 0;
     color: var(--white);
 }
 
@@ -88,7 +120,7 @@ footer {
     background: var(--black);
     color: var(--white);
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .email {
@@ -156,7 +188,7 @@ h2, h3 {
     height: 300px;
     width: 100%;
     max-width: 800px;
-    padding: 1rem;
+    padding: 1rem 0;
     position: relative;
 }
 /* ADD ON TRANSITION ON HEIGHT */
