@@ -14,12 +14,15 @@
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
     <header>
         <div class="container">
-            <h1>Vanguard</h1>
-                <h2>Main Navigation</h2>
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
+            <nav>
+                    <h1>Vanguard</h1>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="hamburger">☰</label>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
         </div>
     </header>
@@ -27,20 +30,20 @@
             <div class="container">
                 <h2>Innovation & Investment</h2>
                 <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-                <button>Request a Consultation</button>
+                <button class="request">Request a Consultation</button>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2>Our Expertise. Your Edge.</h2>
                 <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.</p>
             </div>
         </section>
 
-        <section class="services">
-            <div class="container">
-                <h2>What We Offer</h2>
+        <div class="container" id="services-container">
+            <h2>What We Offer</h2>
+            <section class="services" id="services">
 
                 <div class="service-card">
                     <h3>Strategic Growth Consulting</h3>
@@ -71,14 +74,15 @@
                     <h3>Corporate Innovation</h3>
                     <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
                 </div>
-            </div>
             </section>
+        </div>
 
             <section class="results">
                 <div class="container">
                     <h2>Proven Results</h2>
                     <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
-
+                    <div class="data-container">
+                    <div class="profits-container">
                     <h3>Profits</h3>
                     <table class="profit-table">
                         <tr>
@@ -91,7 +95,7 @@
                             <td>$120M</td>
                             <td>30%</td>
                         </tr>
-                        <tr>
+                        <tr class="table-grey">
                             <td>2021</td>
                             <td>$180M</td>
                             <td>50%</td>
@@ -101,7 +105,7 @@
                             <td>$250M</td>
                             <td>70%</td>
                         </tr>
-                        <tr>
+                        <tr class="table-grey">
                             <td>2023</td>
                             <td>$340M</td>
                             <td>85%</td>
@@ -112,6 +116,8 @@
                             <td>100%</td>
                         </tr>
                     </table>
+                    </div>
+                    <div class="growth-container">
                     <h3>Growth</h3>
 <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
                     <div  id="bar-chart">
@@ -121,30 +127,41 @@
                         <div class="bar" data-year="2023" style="--height: 85%;"></div>
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
+                    </div>
+                    </div>
                 </div>
             </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <h2>Contact Us</h2>
-                <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+                <p class="contact-prompt">Want to take your business to the next level? Get in touch with our elite team today.</p>
                 <form>
-
+                    <div class="input-group">
                     <p>Full Name</p>
                     <input type="text" name="full-name" required><br><br>
+                    </div>
 
+                    <div class="input-group">
                     <p>Email Address</p>
-                    <input type="email" name="email" required><br><br>
+                    <input type="text" name="email" autocomplete="email" required><br><br>
+                    </div>
 
+                    <div class="input-group">
                     <p>Company Name</p>
-                    <input type="text" name="company-name"><br><br>
-
+                    <input type="text" name="company-name" required><br><br>
+                    </div>
+                    
+                    <div class="input-group">
                     <p>Industry</p>
-                    <input type="text" name="industry"><br><br>
+                    <input type="text" name="industry" required><br><br>
+                    </div>
 
+                    <div class="input-group">
                     <p>How can we help you?</p>
                     <textarea name="message" rows="5" cols="30"></textarea><br><br>
+                    </div>
 
-                    <button type="submit">Submit</button>
+                    <button class="submit" type="submit">Submit</button>
                 </form>
             </div>
         </section>
