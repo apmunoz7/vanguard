@@ -311,12 +311,13 @@ h2, h3 {
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     animation: float 3s ease-in-out infinite;
+    transform: translateY(-40%);
 }
 
 @keyframes float {
-    0% { transform: translateY(-50%) translateY(0);}
-    50% { transform: translateY(-50%) translateY(-10px);}
-    100% { transform: translateY(-50%) translateY(0);}
+    0% { transform: translateY(-40%) translateY(0);}
+    50% { transform: translateY(-40%) translateY(-10px);}
+    100% { transform: translateY(-40%) translateY(0);}
 }
 
 /* THIS ONE IS DONE FOR YOU */
